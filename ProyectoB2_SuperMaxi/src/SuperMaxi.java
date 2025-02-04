@@ -416,3 +416,303 @@ public class SuperMaxi {
         System.out.println("--------------------------------------------------------");
     }
 }
+/***
+ * run:
+ * BIENVENID@ A
+ * ---SUPERMAXI---
+ * 1. PRODUCTOS
+ * 2. GESTION DE PRODUCTOS 
+ * 3. PROMOCIONES
+ * 4. FACTURAR
+ * 5. ESTADISTICAS
+ * 6. SALIR SISTEMA
+ * INGRESE UNA OPCION: 1
+ * ---------------------------------------------------------------------------------
+ * | Nro | Nombre               | Precio   | Stock    | Caducidad    | Categoria   |
+ * ---------------------------------------------------------------------------------
+ * | 1   | Bombillo             | 2.50     | 100      | 2028-12-31   | Vivienda    |
+ * | 2   | Pintura              | 15.00    | 30       | 2026-06-30   | Vivienda    |
+ * | 3   | Cepillo de Piso      | 5.00     | 50       | 2027-12-31   | Vivienda    |
+ * | 4   | Almohada             | 20.00    | 20       | 2030-01-01   | Vivienda    |
+ * | 5   | Basurero             | 12.00    | 40       | 2029-12-31   | Vivienda    |
+ * | 6   | Escoba               | 6.00     | 60       | 2027-12-31   | Vivienda    |
+ * | 7   | Cortina              | 18.00    | 25       | 2030-06-15   | Vivienda    |
+ * | 8   | Silla                | 45.00    | 15       | 2032-03-20   | Vivienda    |
+ * | 9   | Mesa                 | 80.00    | 10       | 2032-07-10   | Vivienda    |
+ * | 10  | Lampara              | 25.00    | 35       | 2029-09-05   | Vivienda    |
+ * | 11  | Cuaderno             | 1.50     | 200      | 2025-12-31   | Educacion   |
+ * | 12  | Lapiz                | 0.50     | 300      | 2026-12-31   | Educacion   |
+ * | 13  | Mochila              | 25.00    | 60       | 2030-01-01   | Educacion   |
+ * | 14  | Regla                | 0.80     | 150      | 2027-06-30   | Educacion   |
+ * | 15  | Marcador             | 3.00     | 100      | 2028-12-31   | Educacion   |
+ * | 16  | Borrador             | 0.60     | 250      | 2026-05-10   | Educacion   |
+ * | 17  | Sacapuntas           | 1.00     | 180      | 2027-04-15   | Educacion   |
+ * | 18  | Tijeras              | 4.50     | 120      | 2028-07-30   | Educacion   |
+ * | 19  | Cartulina            | 0.90     | 500      | 2026-11-20   | Educacion   |
+ * | 20  | Calculadora          | 20.00    | 50       | 2031-01-01   | Educacion   |
+ * | 21  | Leche                | 1.20     | 50       | 2025-02-15   | Alimentacion|
+ * | 22  | Pan                  | 2.00     | 80       | 2025-02-20   | Alimentacion|
+ * | 23  | Manzanas             | 1.50     | 100      | 2025-02-18   | Alimentacion|
+ * | 24  | Yogur                | 0.90     | 60       | 2025-02-25   | Alimentacion|
+ * | 25  | Cereal               | 4.00     | 40       | 2025-03-01   | Alimentacion|
+ * | 26  | Arroz                | 3.00     | 70       | 2025-06-10   | Alimentacion|
+ * | 27  | Azucar               | 2.50     | 90       | 2025-05-15   | Alimentacion|
+ * | 28  | Sal                  | 1.80     | 120      | 2026-08-30   | Alimentacion|
+ * | 29  | Cafe                 | 6.00     | 45       | 2025-09-01   | Alimentacion|
+ * | 30  | Chocolate            | 2.80     | 55       | 2025-04-20   | Alimentacion|
+ * | 31  | Camisa               | 15.00    | 30       | 2030-12-31   | Vestimenta  |
+ * | 32  | Pantalon             | 25.00    | 20       | 2030-12-31   | Vestimenta  |
+ * | 33  | Zapatos              | 30.00    | 15       | 2030-12-31   | Vestimenta  |
+ * | 34  | Cinturon             | 10.00    | 50       | 2030-12-31   | Vestimenta  |
+ * | 35  | Sombrero             | 12.00    | 10       | 2030-12-31   | Vestimenta  |
+ * | 36  | Bufanda              | 8.00     | 25       | 2030-12-31   | Vestimenta  |
+ * | 37  | Guantes              | 7.00     | 40       | 2030-12-31   | Vestimenta  |
+ * | 38  | Calcetines           | 5.00     | 60       | 2030-12-31   | Vestimenta  |
+ * | 39  | Chaqueta             | 40.00    | 15       | 2030-12-31   | Vestimenta  |
+ * | 40  | Vestido              | 35.00    | 20       | 2030-12-31   | Vestimenta  |
+ * | 41  | Paracetamol          | 0.50     | 200      | 2025-12-31   | Salud       |
+ * | 42  | Gel                  | 3.00     | 100      | 2026-01-01   | Salud       |
+ * | 43  | Mascarillas          | 0.80     | 300      | 2026-12-31   | Salud       |
+ * | 44  | Alcohol              | 2.50     | 150      | 2026-06-30   | Salud       |
+ * | 45  | Termometro           | 15.00    | 20       | 2030-01-01   | Salud       |
+ * | 46  | Venda                | 2.00     | 100      | 2027-03-01   | Salud       |
+ * | 47  | Curitas              | 1.50     | 250      | 2026-09-15   | Salud       |
+ * | 48  | Jabon                | 3.20     | 180      | 2027-12-01   | Salud       |
+ * | 49  | Shampoo              | 5.50     | 80       | 2028-06-10   | Salud       |
+ * | 50  | Vitaminas            | 12.00    | 50       | 2029-02-20   | Salud       |
+ * ---------------------------------------------------------------------------------
+
+ * BIENVENID@ A
+ * ---SUPERMAXI---
+ * 1. PRODUCTOS
+ * 2. GESTION DE PRODUCTOS 
+ * 3. PROMOCIONES
+ * 4. FACTURAR
+ * 5. ESTADISTICAS
+ * 6. SALIR SISTEMA
+ * INGRESE UNA OPCION: 3
+
+ * -------------- PRODUCTOS EN PROMOCI�N --------------
+ * -------------------------------------------------------------
+ * | Producto             | Stock    | Caducidad    | Descuento  |
+ * -------------------------------------------------------------
+ * | Cuaderno             | 200      | 2025-12-31   | 10%        |
+ * | Lapiz                | 300      | 2026-12-31   | 10%        |
+ * | Regla                | 150      | 2027-06-30   | 10%        |
+ * | Borrador             | 250      | 2026-05-10   | 10%        |
+ * | Sacapuntas           | 180      | 2027-04-15   | 10%        |
+ * | Tijeras              | 120      | 2028-07-30   | 10%        |
+ * | Cartulina            | 500      | 2026-11-20   | 10%        |
+ * | Leche                | 50       | 2025-02-15   | 10%        |
+ * | Pan                  | 80       | 2025-02-20   | 10%        |
+ * | Manzanas             | 100      | 2025-02-18   | 10%        |
+ * | Yogur                | 60       | 2025-02-25   | 10%        |
+ * | Cereal               | 40       | 2025-03-01   | 10%        |
+ * | Sal                  | 120      | 2026-08-30   | 10%        |
+ * | Paracetamol          | 200      | 2025-12-31   | 10%        |
+ * | Mascarillas          | 300      | 2026-12-31   | 10%        |
+ * | Alcohol              | 150      | 2026-06-30   | 10%        |
+ * | Curitas              | 250      | 2026-09-15   | 10%        |
+ * | Jabon                | 180      | 2027-12-01   | 10%        |
+ * -------------------------------------------------------------
+ * BIENVENID@ A
+ * ---SUPERMAXI---
+ * 1. PRODUCTOS
+ * 2. GESTION DE PRODUCTOS 
+ * 3. PROMOCIONES
+ * 4. FACTURAR
+ * 5. ESTADISTICAS
+ * 6. SALIR SISTEMA
+ * INGRESE UNA OPCION: 2
+ * ---GESTION DE PRODUCTOS---
+ * 1. AGREGAR PRODUCTO
+ * 2. MODIFICAR STOCK DE PRODUCTO
+ * 3. VOLVER AL MENU PRINCIPAL
+ * INGRESE UNA OPCION: 1
+ * Ingrese nombre del producto: Medicine
+ * Ingrese el precio: 12
+ * Ingrese su stock: 12
+ * Ingrese fecha de caducidad (YYYY-MM-DD): 2029-12-11
+ * Ingrese su categor�a(Vivienda/Educacion/Alimentacion/Vestimenta/Salud): Salud
+ * PRODUCTO AGREGADO EXITOSAMENTE!!
+ * BIENVENID@ A
+ * ---SUPERMAXI---
+ * 1. PRODUCTOS
+ * 2. GESTION DE PRODUCTOS 
+ * 3. PROMOCIONES
+ * 4. FACTURAR
+ * 5. ESTADISTICAS
+ * 6. SALIR SISTEMA
+ * INGRESE UNA OPCION: 2
+ * ---GESTION DE PRODUCTOS---
+ * 1. AGREGAR PRODUCTO
+ * 2. MODIFICAR STOCK DE PRODUCTO
+ * 3. VOLVER AL MENU PRINCIPAL
+ * INGRESE UNA OPCION: 2
+ * Ingrese el nombre del Producto que desea modificar: Medicine
+ * Stock actual: 12
+ * Ingrese el nuevo stock: 10
+ * Stock modificado de manera exitosa
+ * BIENVENID@ A
+ * ---SUPERMAXI---
+ * 1. PRODUCTOS
+ * 2. GESTION DE PRODUCTOS 
+ * 3. PROMOCIONES
+ * 4. FACTURAR
+ * 5. ESTADISTICAS
+ * 6. SALIR SISTEMA
+ * INGRESE UNA OPCION: 1
+ * ---------------------------------------------------------------------------------
+ * | Nro | Nombre               | Precio   | Stock    | Caducidad    | Categoria   |
+ * ---------------------------------------------------------------------------------
+ * | 1   | Bombillo             | 2.50     | 100      | 2028-12-31   | Vivienda    |
+ * | 2   | Pintura              | 15.00    | 30       | 2026-06-30   | Vivienda    |
+ * | 3   | Cepillo de Piso      | 5.00     | 50       | 2027-12-31   | Vivienda    |
+ * | 4   | Almohada             | 20.00    | 20       | 2030-01-01   | Vivienda    |
+ * | 5   | Basurero             | 12.00    | 40       | 2029-12-31   | Vivienda    |
+ * | 6   | Escoba               | 6.00     | 60       | 2027-12-31   | Vivienda    |
+ * | 7   | Cortina              | 18.00    | 25       | 2030-06-15   | Vivienda    |
+ * | 8   | Silla                | 45.00    | 15       | 2032-03-20   | Vivienda    |
+ * | 9   | Mesa                 | 80.00    | 10       | 2032-07-10   | Vivienda    |
+ * | 10  | Lampara              | 25.00    | 35       | 2029-09-05   | Vivienda    |
+ * | 11  | Cuaderno             | 1.50     | 200      | 2025-12-31   | Educacion   |
+ * | 12  | Lapiz                | 0.50     | 300      | 2026-12-31   | Educacion   |
+ * | 13  | Mochila              | 25.00    | 60       | 2030-01-01   | Educacion   |
+ * | 14  | Regla                | 0.80     | 150      | 2027-06-30   | Educacion   |
+ * | 15  | Marcador             | 3.00     | 100      | 2028-12-31   | Educacion   |
+ * | 16  | Borrador             | 0.60     | 250      | 2026-05-10   | Educacion   |
+ * | 17  | Sacapuntas           | 1.00     | 180      | 2027-04-15   | Educacion   |
+ * | 18  | Tijeras              | 4.50     | 120      | 2028-07-30   | Educacion   |
+ * | 19  | Cartulina            | 0.90     | 500      | 2026-11-20   | Educacion   |
+ * | 20  | Calculadora          | 20.00    | 50       | 2031-01-01   | Educacion   |
+ * | 21  | Leche                | 1.20     | 50       | 2025-02-15   | Alimentacion|
+ * | 22  | Pan                  | 2.00     | 80       | 2025-02-20   | Alimentacion|
+ * | 23  | Manzanas             | 1.50     | 100      | 2025-02-18   | Alimentacion|
+ * | 24  | Yogur                | 0.90     | 60       | 2025-02-25   | Alimentacion|
+ * | 25  | Cereal               | 4.00     | 40       | 2025-03-01   | Alimentacion|
+ * | 26  | Arroz                | 3.00     | 70       | 2025-06-10   | Alimentacion|
+ * | 27  | Azucar               | 2.50     | 90       | 2025-05-15   | Alimentacion|
+ * | 28  | Sal                  | 1.80     | 120      | 2026-08-30   | Alimentacion|
+ * | 29  | Cafe                 | 6.00     | 45       | 2025-09-01   | Alimentacion|
+ * | 30  | Chocolate            | 2.80     | 55       | 2025-04-20   | Alimentacion|
+ * | 31  | Camisa               | 15.00    | 30       | 2030-12-31   | Vestimenta  |
+ * | 32  | Pantalon             | 25.00    | 20       | 2030-12-31   | Vestimenta  |
+ * | 33  | Zapatos              | 30.00    | 15       | 2030-12-31   | Vestimenta  |
+ * | 34  | Cinturon             | 10.00    | 50       | 2030-12-31   | Vestimenta  |
+ * | 35  | Sombrero             | 12.00    | 10       | 2030-12-31   | Vestimenta  |
+ * | 36  | Bufanda              | 8.00     | 25       | 2030-12-31   | Vestimenta  |
+ * | 37  | Guantes              | 7.00     | 40       | 2030-12-31   | Vestimenta  |
+ * | 38  | Calcetines           | 5.00     | 60       | 2030-12-31   | Vestimenta  |
+ * | 39  | Chaqueta             | 40.00    | 15       | 2030-12-31   | Vestimenta  |
+ * | 40  | Vestido              | 35.00    | 20       | 2030-12-31   | Vestimenta  |
+ * | 41  | Paracetamol          | 0.50     | 200      | 2025-12-31   | Salud       |
+ * | 42  | Gel                  | 3.00     | 100      | 2026-01-01   | Salud       |
+ * | 43  | Mascarillas          | 0.80     | 300      | 2026-12-31   | Salud       |
+ * | 44  | Alcohol              | 2.50     | 150      | 2026-06-30   | Salud       |
+ * | 45  | Termometro           | 15.00    | 20       | 2030-01-01   | Salud       |
+ * | 46  | Venda                | 2.00     | 100      | 2027-03-01   | Salud       |
+ * | 47  | Curitas              | 1.50     | 250      | 2026-09-15   | Salud       |
+ * | 48  | Jabon                | 3.20     | 180      | 2027-12-01   | Salud       |
+ * | 49  | Shampoo              | 5.50     | 80       | 2028-06-10   | Salud       |
+ * | 50  | Vitaminas            | 12.00    | 50       | 2029-02-20   | Salud       |
+ * | 51  | Medicine             | 12       | 10       | 2029-12-11   | Salud       |
+ * ---------------------------------------------------------------------------------
+
+ * BIENVENID@ A
+ * ---SUPERMAXI---
+ * 1. PRODUCTOS
+ * 2. GESTION DE PRODUCTOS 
+ * 3. PROMOCIONES
+ * 4. FACTURAR
+ * 5. ESTADISTICAS
+ * 6. SALIR SISTEMA
+ * INGRESE UNA OPCION: 4
+
+ * ----------------------- FACTURACI�N -----------------------
+ * INGRESE EL NOMBRE DEL PRODUCTO O (F) PARA FINALIZAR: Cuaderno
+ * Ingrese la cantidad: 1
+ * Descuento del 10% aplicado!!
+ * | Producto             | Cantidad | Subtotal | Descuento  |
+ * ----------------------------------------------------------
+ * | Cuaderno             | 1        | 1,50     | 0,15       |
+ * INGRESE EL NOMBRE DEL PRODUCTO O (F) PARA FINALIZAR: Silla
+ * Ingrese la cantidad: 1
+ * | Producto             | Cantidad | Subtotal | Descuento  |
+ * ----------------------------------------------------------
+ * | Silla                | 1        | 45,00    | 0,00       |
+ * INGRESE EL NOMBRE DEL PRODUCTO O (F) PARA FINALIZAR: Pan
+ * Ingrese la cantidad: 1
+ * Descuento del 10% aplicado!!
+ * | Producto             | Cantidad | Subtotal | Descuento  |
+ * ----------------------------------------------------------
+ * | Pan                  | 1        | 2,00     | 0,20       |
+ * INGRESE EL NOMBRE DEL PRODUCTO O (F) PARA FINALIZAR: Gel
+ * Ingrese la cantidad: 1
+ * | Producto             | Cantidad | Subtotal | Descuento  |
+ * ----------------------------------------------------------
+ * | Gel                  | 1        | 3,00     | 0,00       |
+ * INGRESE EL NOMBRE DEL PRODUCTO O (F) PARA FINALIZAR: Camisa
+ * Ingrese la cantidad: 1
+ * | Producto             | Cantidad | Subtotal | Descuento  |
+ * ----------------------------------------------------------
+ * | Camisa               | 1        | 15,00    | 0,00       |
+ * INGRESE EL NOMBRE DEL PRODUCTO O (F) PARA FINALIZAR: f
+ * ----------------------------------------------------------
+
+ * Subtotal       : $66,15
+ * IVA (12%)      : $7,94
+ * Total a Pagar  : $74,09
+
+ * ------------------- DEDUCIBLES POR CATEGOR�A -------------------
+ * Vivienda       : $14,63
+ * Educaci�n      : $0,44
+ * Alimentaci�n   : $0,59
+ * Vestimenta     : $4,88
+ * Salud          : $3,90
+ * ----------------------------------------------------------------
+ * BIENVENID@ A
+ * ---SUPERMAXI---
+ * 1. PRODUCTOS
+ * 2. GESTION DE PRODUCTOS 
+ * 3. PROMOCIONES
+ * 4. FACTURAR
+ * 5. ESTADISTICAS
+ * 6. SALIR SISTEMA
+ * INGRESE UNA OPCION: 5
+
+ * -------------------- ESTAD�STICAS DE VENTAS --------------------
+
+ * ------------------ VENTAS POR PRODUCTO ------------------
+ * | Producto             | Total Ventas |
+ * --------------------------------------------------------
+ * | Silla                | $45,00     |
+ * | Cuaderno             | $1,35      |
+ * | Pan                  | $1,80      |
+ * | Camisa               | $15,00     |
+ * | Gel                  | $3,00      |
+ * --------------------------------------------------------
+
+ * ------------------ VENTAS POR CATEGORIA -----------------
+ * | Categoria       | Total Ventas |
+ * --------------------------------------------------------
+ * | Vivienda        | $45,00     |
+ * | Educacion       | $1,35      |
+ * | Alimentacion    | $1,80      |
+ * | Vestimenta      | $15,00     |
+ * | Salud           | $3,00      |
+ * --------------------------------------------------------
+
+ * VENTAS TOTALES      : $66,15
+ * --------------------------------------------------------
+ * BIENVENID@ A
+ * ---SUPERMAXI---
+ * 1. PRODUCTOS
+ * 2. GESTION DE PRODUCTOS 
+ * 3. PROMOCIONES
+ * 4. FACTURAR
+ * 5. ESTADISTICAS
+ * 6. SALIR SISTEMA
+ * INGRESE UNA OPCION: 6
+ * Saliendo...
+ * BUILD SUCCESSFUL (total time: 2 minutes 22 seconds)
+ */
