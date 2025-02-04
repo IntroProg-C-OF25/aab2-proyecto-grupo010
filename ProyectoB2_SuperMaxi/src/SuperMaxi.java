@@ -248,9 +248,7 @@ public class SuperMaxi {
 
                 if (stock > 100 || diasParaVencer <= 30) { //VERIFICA QUE PUEDAN SER PROMOCIONES
                     productProms[i] = Productos[i][0];
-                } else {
-                    productProms[i] = null; // SE QUITA SI EL PRODUCTO YA NO APLICA
-                }
+                } 
             }
         }
     }
