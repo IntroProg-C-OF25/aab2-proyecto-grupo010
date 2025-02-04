@@ -91,7 +91,7 @@ public class SuperMaxi {
         boolean system = true;
         double deducibles[] = new double[5];
         double ventasCate[] = new double[5];
-        double ventas[] = new double[filas];
+        double ventas[] = new double[filas + 5];
         String productProms[] = new String[filas];
         copyPro(Productos);
 
