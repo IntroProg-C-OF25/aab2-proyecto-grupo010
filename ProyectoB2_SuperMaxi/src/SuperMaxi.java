@@ -492,7 +492,7 @@ public class SuperMaxi {
  * 6. SALIR SISTEMA
  * INGRESE UNA OPCION: 3
 
- * -------------- PRODUCTOS EN PROMOCI�N --------------
+ * -------------- PRODUCTOS EN PROMOCION --------------
  * -------------------------------------------------------------
  * | Producto             | Stock    | Caducidad    | Descuento  |
  * -------------------------------------------------------------
@@ -533,7 +533,7 @@ public class SuperMaxi {
  * Ingrese el precio: 12
  * Ingrese su stock: 12
  * Ingrese fecha de caducidad (YYYY-MM-DD): 2029-12-11
- * Ingrese su categor�a(Vivienda/Educacion/Alimentacion/Vestimenta/Salud): Salud
+ * Ingrese su categoria(Vivienda/Educacion/Alimentacion/Vestimenta/Salud): Salud
  * PRODUCTO AGREGADO EXITOSAMENTE!!
  * BIENVENID@ A
  * ---SUPERMAXI---
@@ -628,7 +628,7 @@ public class SuperMaxi {
  * 6. SALIR SISTEMA
  * INGRESE UNA OPCION: 4
 
- * ----------------------- FACTURACI�N -----------------------
+ * ----------------------- FACTURACION -----------------------
  * INGRESE EL NOMBRE DEL PRODUCTO O (F) PARA FINALIZAR: Cuaderno
  * Ingrese la cantidad: 1
  * Descuento del 10% aplicado!!
@@ -663,10 +663,10 @@ public class SuperMaxi {
  * IVA (12%)      : $7,94
  * Total a Pagar  : $74,09
 
- * ------------------- DEDUCIBLES POR CATEGOR�A -------------------
+ * ------------------- DEDUCIBLES POR CATEGORIA -------------------
  * Vivienda       : $14,63
- * Educaci�n      : $0,44
- * Alimentaci�n   : $0,59
+ * Educacion      : $0,44
+ * Alimentacion   : $0,59
  * Vestimenta     : $4,88
  * Salud          : $3,90
  * ----------------------------------------------------------------
@@ -680,7 +680,7 @@ public class SuperMaxi {
  * 6. SALIR SISTEMA
  * INGRESE UNA OPCION: 5
 
- * -------------------- ESTAD�STICAS DE VENTAS --------------------
+ * -------------------- ESTADISTICAS DE VENTAS --------------------
 
  * ------------------ VENTAS POR PRODUCTO ------------------
  * | Producto             | Total Ventas |
