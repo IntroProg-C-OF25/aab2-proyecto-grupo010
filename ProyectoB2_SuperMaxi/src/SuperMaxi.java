@@ -200,7 +200,7 @@ public class SuperMaxi {
             }
         }
         if (pos == -1) {
-            System.out.println("No hay espacio para más productos");
+            System.out.println("No hay espacio para mas productos");
             return;
         }
         System.out.print("Ingrese nombre del producto: ");
@@ -211,7 +211,7 @@ public class SuperMaxi {
         Productos[pos][2] = tcl.next();
         System.out.print("Ingrese fecha de caducidad (YYYY-MM-DD): ");
         Productos[pos][3] = tcl.next();
-        System.out.print("Ingrese su categoría(Vivienda/Educacion/Alimentacion/Vestimenta/Salud): ");
+        System.out.print("Ingrese su categoria(Vivienda/Educacion/Alimentacion/Vestimenta/Salud): ");
         Productos[pos][4] = tcl.next();
         System.out.println("PRODUCTO AGREGADO EXITOSAMENTE!!");
 
@@ -255,7 +255,7 @@ public class SuperMaxi {
 
     public static void presentarProms(String Productos[][], String productProms[]) { //IMPRIME Y GUARDA PROMOCIONES
         boolean proms = false;
-        System.out.println("\n-------------- PRODUCTOS EN PROMOCIÓN --------------");
+        System.out.println("\n-------------- PRODUCTOS EN PROMOCION --------------");
         System.out.println("-------------------------------------------------------------");
         System.out.printf("| %-20s | %-8s | %-12s | %-10s |\n", "Producto", "Stock", "Caducidad", "Descuento");
         System.out.println("-------------------------------------------------------------");
@@ -279,7 +279,7 @@ public class SuperMaxi {
         int cantidad, stockDispo;
         double precio, subtotal, descuento, total = 0, iva, subtotalFinal = 0;
         boolean buying = true;
-        System.out.println("\n----------------------- FACTURACIÓN -----------------------");
+        System.out.println("\n----------------------- FACTURACION -----------------------");
 
         while (buying) {
             System.out.print("INGRESE EL NOMBRE DEL PRODUCTO O (F) PARA FINALIZAR: ");
@@ -367,7 +367,7 @@ public class SuperMaxi {
     }
 
     public static void dbEstadis(String Productos[][], double ventas[], double ventasCate[]) {
-        System.out.println("\n-------------------- ESTADÍSTICAS DE VENTAS --------------------");
+        System.out.println("\n-------------------- ESTADISTICAS DE VENTAS --------------------");
         double totalVentas = 0;
         // VENTAS POR PRODUCTOS SIN CONTAR EL IVA Y RESTANDOLE EL DESCUENTO SI ES QUE TIENE
         System.out.println("\n------------------ VENTAS POR PRODUCTO ------------------");
